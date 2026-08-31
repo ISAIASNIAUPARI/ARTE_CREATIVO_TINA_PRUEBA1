@@ -30,7 +30,7 @@ var config_default = defineConfig({
         label: "Ajustes generales",
         path: "content/settings",
         format: "json",
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/", allowedActions: { create: false, delete: false } },
         fields: [
           {
             type: "string",
@@ -152,7 +152,7 @@ var config_default = defineConfig({
         path: "content/home",
         format: "json",
         match: { include: "hero" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/", allowedActions: { create: false, delete: false } },
         fields: [
           {
             type: "string",
@@ -199,7 +199,7 @@ var config_default = defineConfig({
         path: "content/home",
         format: "json",
         match: { include: "problems" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular", required: true },
           { type: "string", name: "subheading", label: "P\xE1rrafo", ui: { component: "textarea" } },
@@ -229,7 +229,7 @@ var config_default = defineConfig({
         path: "content/home",
         format: "json",
         match: { include: "about" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/", allowedActions: { create: false, delete: false } },
         fields: [
           {
             type: "string",
@@ -268,7 +268,7 @@ var config_default = defineConfig({
         path: "content/home",
         format: "json",
         match: { include: "portafolio" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular de la secci\xF3n de proyectos", required: true },
           { type: "string", name: "intro", label: "P\xE1rrafo de introducci\xF3n", ui: { component: "textarea" } },
@@ -286,7 +286,7 @@ var config_default = defineConfig({
         path: "content/home",
         format: "json",
         match: { include: "results" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular", required: true },
           {
@@ -311,7 +311,7 @@ var config_default = defineConfig({
         path: "content/nosotros",
         format: "json",
         match: { include: "hero" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/nosotros", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "eyebrow", label: "Texto peque\xF1o (dentro del recuadro)" },
           { type: "string", name: "heading", label: "Titular", required: true },
@@ -332,7 +332,7 @@ var config_default = defineConfig({
         path: "content/nosotros",
         format: "json",
         match: { include: "pillars" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/nosotros", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular", required: true },
           { type: "string", name: "subheading", label: "P\xE1rrafo", ui: { component: "textarea" } },
@@ -356,7 +356,7 @@ var config_default = defineConfig({
         path: "content/nosotros",
         format: "json",
         match: { include: "work-style" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/nosotros", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular", required: true },
           {
@@ -385,7 +385,7 @@ var config_default = defineConfig({
         path: "content/nosotros",
         format: "json",
         match: { include: "bio" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/nosotros", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular", required: true },
           { type: "string", name: "text", label: "P\xE1rrafo", ui: { component: "textarea" }, required: true },
@@ -409,7 +409,7 @@ var config_default = defineConfig({
         path: "content/portafolio",
         format: "json",
         match: { include: "hero" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/portafolio", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "eyebrow", label: "Texto peque\xF1o (dentro del recuadro)" },
           { type: "string", name: "heading", label: "Titular", required: true },
@@ -431,7 +431,7 @@ var config_default = defineConfig({
         path: "content/blog",
         format: "json",
         match: { include: "hero" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/blog", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "eyebrow", label: "Texto peque\xF1o (dentro del recuadro)" },
           { type: "string", name: "heading", label: "Titular", required: true },
@@ -452,7 +452,7 @@ var config_default = defineConfig({
         path: "content/contacto",
         format: "json",
         match: { include: "hero" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/contacto", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular", required: true },
           { type: "string", name: "paragraph1", label: "Primer p\xE1rrafo", ui: { component: "textarea" }, required: true },
@@ -465,7 +465,7 @@ var config_default = defineConfig({
         path: "content/contacto",
         format: "json",
         match: { include: "cta" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/contacto", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "heading", label: "Titular", required: true },
           { type: "string", name: "subheading", label: "P\xE1rrafo", ui: { component: "textarea" }, required: true }
@@ -478,7 +478,7 @@ var config_default = defineConfig({
         path: "content/compartido",
         format: "json",
         match: { include: "cta" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/", allowedActions: { create: false, delete: false } },
         fields: [
           {
             type: "string",
@@ -496,7 +496,7 @@ var config_default = defineConfig({
         path: "content/compartido",
         format: "json",
         match: { include: "testimonio-destacado" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/portafolio", allowedActions: { create: false, delete: false } },
         fields: [
           {
             type: "string",
@@ -517,7 +517,7 @@ var config_default = defineConfig({
         path: "content/privacidad",
         format: "json",
         match: { include: "politica" },
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: { router: () => "/politica-de-privacidad", allowedActions: { create: false, delete: false } },
         fields: [
           { type: "string", name: "eyebrow", label: "Etiqueta peque\xF1a", description: "Ejemplo: Legal" },
           { type: "string", name: "title", label: "T\xEDtulo de la p\xE1gina", required: true },
@@ -575,6 +575,7 @@ var config_default = defineConfig({
         path: "content/proyectos",
         format: "json",
         ui: {
+          router: ({ document }) => `/proyecto/${document._sys.filename}`,
           filename: {
             readonly: false,
             description: "El nombre del archivo es la direcci\xF3n web del proyecto: /proyecto/nombre-del-archivo. C\xE1mbialo con cuidado (rompe el enlace viejo)."
@@ -676,6 +677,7 @@ var config_default = defineConfig({
         path: "content/herramientas",
         format: "json",
         ui: {
+          router: () => "/blog",
           filename: {
             readonly: false,
             description: "Nombre interno del archivo. No afecta ninguna URL."
