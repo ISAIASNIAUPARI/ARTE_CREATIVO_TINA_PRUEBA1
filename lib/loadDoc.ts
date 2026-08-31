@@ -19,13 +19,6 @@ export async function loadDoc<T = unknown>(
   jsonImport: Promise<{ default: unknown }>,
   dataKey: string
 ): Promise<TinaDoc<T>> {
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const queries = client.queries as any
-    const res = await queries[collection]({ relativePath })
-    return { query: res.query, variables: res.variables, data: res.data as T }
-  } catch {
-    const mod = await jsonImport
-    return { query: '', variables: {}, data: { [dataKey]: mod.default } as unknown as T }
-  }
+  const mod = await jsonImport
+  return { query: '', variables: {}, data: { [dataKey]: mod.default } as unknown as T }
 }
