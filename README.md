@@ -50,5 +50,5 @@ cinta animada), iconos SVG y la lógica del formulario de WhatsApp.
 
 ## Despliegue
 
-Vercel conectado a este repositorio: cada push a `main` despliega. El build ejecuta
+Vercel conectado a este repositorio: cada push a `main` despliega. El build  se ejecuta
 `tinacms build && next build`.
