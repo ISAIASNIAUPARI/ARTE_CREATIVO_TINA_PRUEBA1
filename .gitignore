@@ -6,9 +6,9 @@
 /out/
 /build
 
-# tina — el panel estático se regenera en cada build (tinacms build).
-# tina/__generated__ y tina-lock.json SÍ se suben para que el build de
-# Vercel funcione aunque tinacms build tenga un problema de red.
+# tina — el cliente generado (tina/__generated__) SÍ se versiona: así el
+# `next build` de Vercel funciona aunque `tinacms build` no corra (p. ej. sin
+# TINA_TOKEN todavía). El panel /admin es build output pesado, no se versiona.
 /public/admin
 
 # env — nunca subir tokens al repositorio

@@ -19,6 +19,11 @@ const branch =
   process.env.VERCEL_GIT_COMMIT_REF ||
   'main'
 
+// El clientId de Tina es PÚBLICO por diseño (viaja en el bundle del navegador),
+// así que dejarlo aquí como valor por defecto no expone nada. El TINA_TOKEN sí
+// es secreto: solo se lee de la variable de entorno del servidor.
+const clientId = process.env.NEXT_PUBLIC_TINA_CLIENT_ID || '98ab9535-44c1-492c-a156-521e58d17271'
+
 /** Bloque reutilizable: los ajustes de un titular con palabra resaltada. */
 const highlightField = {
   type: 'string' as const,
@@ -30,7 +35,7 @@ const highlightField = {
 
 export default defineConfig({
   branch,
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || '',
+  clientId,
   token: process.env.TINA_TOKEN || '',
   build: {
     outputFolder: 'admin',

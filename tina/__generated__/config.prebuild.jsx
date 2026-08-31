@@ -1,6 +1,7 @@
 // tina/config.ts
 import { defineConfig } from "tinacms";
 var branch = process.env.NEXT_PUBLIC_TINA_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || "main";
+var clientId = process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "98ab9535-44c1-492c-a156-521e58d17271";
 var highlightField = {
   type: "string",
   name: "headingHighlight",
@@ -9,7 +10,7 @@ var highlightField = {
 };
 var config_default = defineConfig({
   branch,
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
+  clientId,
   token: process.env.TINA_TOKEN || "",
   build: {
     outputFolder: "admin",
