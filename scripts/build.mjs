@@ -11,18 +11,9 @@ import { rmSync } from 'node:fs'
  */
 const run = (cmd) => execSync(cmd, { stdio: 'inherit' })
 
-try {
-  run('tinacms build --skip-cloud-checks --skip-indexing')
-} catch {
-  console.warn(
-    '\n⚠️  tinacms build no se pudo completar (¿falta TINA_TOKEN?). ' +
-      'Se usa el cliente y el panel /admin ya versionados.\n'
-  )
-}
-
-// Tina deja un .gitignore dentro de public/admin que oculta el panel del repo.
-// Lo quitamos para poder versionar el panel (así /admin funciona en el primer
-// deploy aunque tinacms build no corra).
+// Los assets de /admin ya están versionados en el repo (generados localmente
+// con el clientId correcto). No corremos tinacms build en Vercel para evitar
+// que sobreescriba public/admin/index.html con la variable de entorno incorrecta.
 try {
   rmSync('public/admin/.gitignore', { force: true })
 } catch {}
