@@ -6,10 +6,10 @@
 /out/
 /build
 
-# tina — el cliente generado (tina/__generated__) SÍ se versiona: así el
-# `next build` de Vercel funciona aunque `tinacms build` no corra (p. ej. sin
-# TINA_TOKEN todavía). El panel /admin es build output pesado, no se versiona.
-/public/admin
+# tina — el cliente generado (tina/__generated__) y el panel /admin SÍ se
+# versionan: así el primer deploy en Vercel funciona aunque `tinacms build` no
+# corra todavía (p. ej. sin TINA_TOKEN). En cada build correcto se regeneran.
+/public/admin/.gitignore
 
 # env — nunca subir tokens al repositorio
 .env

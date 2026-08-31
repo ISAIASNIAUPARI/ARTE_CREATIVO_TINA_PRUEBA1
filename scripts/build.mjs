@@ -1,4 +1,5 @@
 import { execSync } from 'node:child_process'
+import { rmSync } from 'node:fs'
 
 /**
  * Build de producción, resistente al primer deploy:
@@ -15,8 +16,15 @@ try {
 } catch {
   console.warn(
     '\n⚠️  tinacms build no se pudo completar (¿falta TINA_TOKEN?). ' +
-      'Se usa el cliente ya versionado en tina/__generated__/.\n'
+      'Se usa el cliente y el panel /admin ya versionados.\n'
   )
 }
+
+// Tina deja un .gitignore dentro de public/admin que oculta el panel del repo.
+// Lo quitamos para poder versionar el panel (así /admin funciona en el primer
+// deploy aunque tinacms build no corra).
+try {
+  rmSync('public/admin/.gitignore', { force: true })
+} catch {}
 
 run('next build')
