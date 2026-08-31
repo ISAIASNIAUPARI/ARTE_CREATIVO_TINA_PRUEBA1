@@ -1,0 +1,22 @@
+{
+  "title": "Alonja Coffee",
+  "category": "Informativo",
+  "service": "Diseño Web con Trazabilidad",
+  "image": "/images/projects/alonja-card.webp",
+  "shortDescription": "Rastreo de lotes de café, proceso paso a paso y origen de cada finca ecuatoriana.",
+  "featuredOnHome": true,
+  "order": 8,
+  "caseImage": "/images/projects/alonja-case.webp",
+  "objective": "Que cada bolsa de café cuente su propio origen: finca, fecha de cosecha y proceso.",
+  "story": [
+    { "parrafo": "Alonja quería que cada bolsa de café contara su propio origen: fecha de cosecha, finca y proceso de tueste." },
+    { "parrafo": "Se implementó un buscador de trazabilidad por código de lote, junto con un recorrido visual de cultivo, recolección, secado y tostado." }
+  ],
+  "benefits": [
+    { "title": "Trazabilidad por lote", "text": "Un buscador muestra el origen exacto de cada bolsa con solo un código." },
+    { "title": "Proceso visual", "text": "Cultivo, recolección, secado y tostado, explicados paso a paso." },
+    { "title": "Historia de la marca", "text": "Sección de origen y de los agricultores detrás del producto." }
+  ],
+  "closingQuestion": "¿Tu producto tiene una historia de origen que contar?",
+  "closingSubtext": "Construyamos la web que la muestre."
+}

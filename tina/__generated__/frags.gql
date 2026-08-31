@@ -1,0 +1,212 @@
+fragment SettingsParts on Settings {
+  __typename
+  brandName
+  logo
+  phoneDisplay
+  email
+  addressLine
+  mapLink
+  whatsappNumber
+  whatsappShortLink
+  footerCopyright
+  chatEnabled
+  chatWebhookUrl
+  chatBotAvatar
+  chatQuickReplies {
+    __typename
+    label
+    question
+  }
+  carouselAutoplay
+  showConsultBadge
+  showDangerTape
+}
+
+fragment HomeHeroParts on HomeHero {
+  __typename
+  eyebrow
+  heading
+  headingHighlight
+  subheading
+  ctaLabel
+  heroVideo
+  tags
+}
+
+fragment HomeProblemsParts on HomeProblems {
+  __typename
+  heading
+  subheading
+  items {
+    __typename
+    title
+    text
+  }
+  tapeText
+}
+
+fragment HomeAboutParts on HomeAbout {
+  __typename
+  eyebrow
+  heading
+  text
+  points
+  photo
+  badgeNumber
+  badgeLabel
+}
+
+fragment HomePortfolioIntroParts on HomePortfolioIntro {
+  __typename
+  heading
+  intro
+  ctaLabel
+}
+
+fragment HomeResultsParts on HomeResults {
+  __typename
+  heading
+  testimonials {
+    __typename
+    company
+    name
+    text
+  }
+}
+
+fragment NosotrosHeroParts on NosotrosHero {
+  __typename
+  eyebrow
+  heading
+  headingHighlight
+  text
+  tags
+}
+
+fragment NosotrosPillarsParts on NosotrosPillars {
+  __typename
+  heading
+  subheading
+  items {
+    __typename
+    title
+    text
+  }
+}
+
+fragment NosotrosWorkStyleParts on NosotrosWorkStyle {
+  __typename
+  heading
+  items {
+    __typename
+    highlight
+    text
+  }
+}
+
+fragment NosotrosBioParts on NosotrosBio {
+  __typename
+  heading
+  text
+  points
+  ctaLabel
+  photo
+  badgeNumber
+  badgeLabel
+}
+
+fragment PortfolioHeroParts on PortfolioHero {
+  __typename
+  eyebrow
+  heading
+  headingHighlight
+  subheading
+  tags
+}
+
+fragment BlogHeroParts on BlogHero {
+  __typename
+  eyebrow
+  heading
+  headingHighlight
+  subheading
+  toolsLabel
+}
+
+fragment ContactHeroParts on ContactHero {
+  __typename
+  heading
+  paragraph1
+  paragraph2
+}
+
+fragment ContactPageCtaParts on ContactPageCta {
+  __typename
+  heading
+  subheading
+}
+
+fragment ContactCtaParts on ContactCta {
+  __typename
+  heading
+  subheading
+}
+
+fragment FeaturedTestimonialParts on FeaturedTestimonial {
+  __typename
+  quote
+  author
+  ctaLabel
+}
+
+fragment PrivacyPolicyParts on PrivacyPolicy {
+  __typename
+  eyebrow
+  title
+  subtitle
+  lastUpdated
+  contactEmail
+  sections {
+    __typename
+    number
+    title
+    body
+    bullets
+    callout
+  }
+}
+
+fragment ProjectParts on Project {
+  __typename
+  title
+  category
+  service
+  image
+  shortDescription
+  featuredOnHome
+  order
+  caseImage
+  objective
+  story {
+    __typename
+    parrafo
+  }
+  benefits {
+    __typename
+    title
+    text
+  }
+  closingQuestion
+  closingSubtext
+}
+
+fragment ToolCardParts on ToolCard {
+  __typename
+  title
+  category
+  logo
+  logoBackground
+  description
+  aboutText
+  order
+}

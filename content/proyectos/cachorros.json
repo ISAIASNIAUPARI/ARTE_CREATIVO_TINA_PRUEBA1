@@ -1,0 +1,22 @@
+{
+  "title": "Cachorros de Líneas Selectas",
+  "category": "Tiendas",
+  "service": "Landing de Criadero Canino",
+  "image": "/images/projects/cachorros-card.webp",
+  "shortDescription": "Cachorros de líneas selectas, con catálogo de camadas disponibles y contacto inmediato por WhatsApp.",
+  "featuredOnHome": false,
+  "order": 4,
+  "caseImage": "/images/projects/cachorros-case.webp",
+  "objective": "Vender cachorros de líneas selectas transmitiendo seriedad y cuidado, no solo fotos sueltas.",
+  "story": [
+    { "parrafo": "Un criadero de líneas selectas necesitaba una landing con presencia y confianza para vender cachorros con pedigrí, no solo mostrar fotos sueltas." },
+    { "parrafo": "Se priorizó una portada de impacto con el catálogo de camadas disponibles y contacto inmediato por WhatsApp." }
+  ],
+  "benefits": [
+    { "title": "Portada de impacto", "text": "Una imagen y un mensaje claro sobre el criadero desde el primer scroll." },
+    { "title": "Catálogo de camadas", "text": "Cachorros disponibles organizados y listos para consultar." },
+    { "title": "Contacto inmediato", "text": "Botón de WhatsApp siempre visible para reservar un cachorro." }
+  ],
+  "closingQuestion": "¿Tienes un criadero o negocio de mascotas?",
+  "closingSubtext": "Te ayudo a mostrarlo con la seriedad que merece."
+}

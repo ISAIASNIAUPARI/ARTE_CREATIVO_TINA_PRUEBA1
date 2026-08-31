@@ -1,0 +1,9 @@
+{
+  "title": "GitHub",
+  "category": "Herramientas",
+  "logo": "/images/tools/github.webp",
+  "logoBackground": "#ffffff",
+  "description": "Todo proyecto queda versionado: puedo volver atrás, probar cambios sin romper la web en producción y entregar el código al cliente.",
+  "aboutText": "Sobre la herramienta: GitHub guarda el historial completo del proyecto y permite trabajar en ramas separadas antes de publicar.",
+  "order": 8
+}

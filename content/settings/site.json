@@ -1,0 +1,22 @@
+{
+  "brandName": "Arte Creativo",
+  "logo": "/images/logo.png",
+  "phoneDisplay": "+593 96 260 6760",
+  "email": "info@isaiasfreelancer.com",
+  "addressLine": "Quito - Ecuador",
+  "mapLink": "https://maps.app.goo.gl/YcRFeSqC4J721aLz5",
+  "whatsappNumber": "593998381419",
+  "whatsappShortLink": "https://w.app/ztwmvu",
+  "footerCopyright": "Todos los derechos reservados. © Isaías Freelancer 2026",
+  "chatEnabled": true,
+  "chatWebhookUrl": "https://n8n-n8n.kwtwgj.easypanel.host/webhook/arte-creativo-completo?key=714a2572a710151d07155979eaa4676a7f1f4f99ab6474fb",
+  "chatBotAvatar": "/images/bot-avatar.png",
+  "chatQuickReplies": [
+    { "label": "📍 Ubicación en Quito", "question": "¿Dónde están ubicados en Quito?" },
+    { "label": "📁 Ver Portafolio", "question": "Quiero ver el portafolio de proyectos" },
+    { "label": "💲 Consultar Precios", "question": "¿Cuánto cuesta una página web?" }
+  ],
+  "carouselAutoplay": true,
+  "showConsultBadge": true,
+  "showDangerTape": true
+}

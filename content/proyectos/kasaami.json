@@ -1,0 +1,22 @@
+{
+  "title": "Kasaami Care & Beauty",
+  "category": "Especializado",
+  "service": "Diseño Web para Clínica Estética",
+  "image": "/images/projects/kasaami-card.webp",
+  "shortDescription": "Medicina estética y turismo médico en Ecuador, con agenda de citas y recorrido por procedimientos.",
+  "featuredOnHome": true,
+  "order": 9,
+  "caseImage": "/images/projects/kasaami-case.webp",
+  "objective": "Presentar procedimientos de medicina estética a un público que decide su viaje médico desde el extranjero.",
+  "story": [
+    { "parrafo": "El reto era presentar procedimientos de medicina estética de alto nivel (Face, Body, Breast, Hair, Bariatric Care) a un público que decide su viaje médico desde el extranjero, sin perder cercanía." },
+    { "parrafo": "La web combina cifras de resultados, testimonios reales de pacientes y un botón de agenda directa, para que la decisión de viajar a Ecuador se sienta segura desde la pantalla." }
+  ],
+  "benefits": [
+    { "title": "Especialidades claras", "text": "Face, Body, Breast, Hair y Bariatric Care, organizados por categoría." },
+    { "title": "Resultados en cifras", "text": "Pacientes atendidos, especialistas y años de experiencia, visibles desde el inicio." },
+    { "title": "Testimonios reales", "text": "Historias de pacientes que ya vivieron la experiencia." }
+  ],
+  "closingQuestion": "¿Tu clínica recibe pacientes internacionales?",
+  "closingSubtext": "Diseñemos la web que les dé la confianza para viajar."
+}

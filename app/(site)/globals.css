@@ -1,0 +1,384 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #e6bb52;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+@keyframes af-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes af-marquee-rev {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes af-glow {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.12) translate3d(2%, -2%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 0.85;
+  }
+}
+@keyframes af-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+@keyframes wa-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70%,
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+/* Reglas hover de Server Components (styled-jsx solo funciona en Client
+   Components) — nombres con prefijo af- para no colisionar con nada más. */
+
+.af-map-btn {
+  display: inline-block;
+  margin-top: 24px;
+  background: #e6bb52;
+  color: #161616;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  padding: 13px 22px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+.af-map-btn:hover {
+  transform: scale(0.92);
+}
+.af-wa-direct {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  background: #25d366;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 13px 20px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.af-wa-direct:hover {
+  background: #1fbb59;
+  color: #141414;
+}
+
+.af-testimonial-cta:hover {
+  transform: translateY(-6px);
+  background: #101010;
+  color: #f6d98d;
+}
+
+.af-hero-cta:hover {
+  transform: translateY(-12px);
+  background: #f3c13b;
+}
+.af-portfolio-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #e6bb52;
+  color: #161616;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  padding: 14px 22px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+.af-portfolio-cta:hover {
+  transform: scale(0.92);
+}
+.af-about-eyebrow {
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #f3c13b;
+}
+
+.af-pillar-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(230, 187, 82, 0.16);
+  border-radius: 14px;
+  padding: clamp(26px, 2.6vw, 44px);
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+.af-pillar-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.07);
+}
+.af-bio-cta:hover {
+  transform: translateY(-8px);
+  background: #f3c13b;
+}
+
+.af-tool-card {
+  background: linear-gradient(180deg, #303030 0%, #1c1c1c 100%);
+  border: 1px solid rgba(230, 187, 82, 0.14);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.35s ease, transform 0.35s ease;
+}
+.af-tool-card:hover {
+  border-color: rgba(230, 187, 82, 0.45);
+  transform: translateY(-8px);
+}
+.af-tool-link {
+  align-self: flex-start;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  color: #f6d98d;
+  border-bottom: 1px solid rgba(246, 217, 141, 0.45);
+  padding-bottom: 2px;
+}
+.af-tool-link:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.af-closing-cta:hover {
+  background: #f3c13b;
+}
+.af-related-card {
+  display: block;
+  background: #f5c518;
+  border-radius: 10px;
+  padding: 14px 14px 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.af-related-card:hover {
+  transform: translateY(-6px);
+}
+
+/* PortfolioGrid y PortfolioCarousel: las reglas que apuntan a <Link> de
+   next/link viven aquí porque styled-jsx no inyecta su clase de scope en
+   componentes personalizados (solo en elementos DOM nativos). */
+
+.af-tab-btn {
+  background: transparent;
+  border: 0;
+  padding: 6px 2px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: clamp(15px, 1.2vw, 20px);
+  cursor: pointer;
+}
+.af-tab-btn:hover {
+  opacity: 0.8;
+}
+.af-grid-card {
+  position: relative;
+  display: block;
+  background: #f5c518;
+  border-radius: 12px;
+  padding: 18px 18px 0;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.af-grid-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.4);
+}
+.af-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.82) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.af-grid-card:hover .af-grid-overlay {
+  opacity: 1;
+}
+.af-grid-btn {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 8px;
+  background: #e6bb52;
+  color: #161616;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 18px;
+  border-radius: 4px;
+}
+
+.af-carousel-track {
+  scrollbar-width: none;
+}
+.af-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.af-carousel-card {
+  flex: 0 0 clamp(280px, 48%, 620px);
+  scroll-snap-align: start;
+  background: #1a1a1a;
+  border: 1px solid rgba(230, 187, 82, 0.12);
+  border-radius: 12px;
+  padding: clamp(24px, 3vw, 48px) clamp(22px, 3vw, 46px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.35s ease, transform 0.35s ease;
+}
+.af-carousel-card:hover {
+  border-color: rgba(230, 187, 82, 0.4);
+  transform: translateY(-6px);
+}
+.af-carousel-cta {
+  align-self: flex-start;
+  margin-top: 4px;
+  background: #e6bb52;
+  color: #161616;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+.af-carousel-cta:hover {
+  background: #f3c13b;
+}
+
+/* FloatingContactWidget: el botón "Ver más" del chat usa <Link>, mismo motivo. */
+.af-chat-cta {
+  align-self: flex-start;
+  background: #e6bb52;
+  color: #161616;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.4px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  transition: background 0.25s ease;
+}
+.af-chat-cta:hover {
+  background: #f3c13b;
+  color: #161616;
+}
+
+/* Header: el menú móvil usa <Link>, mismo motivo que arriba. */
+.af-menu-close:hover {
+  color: #f3c13b;
+}
+.af-menu-link:hover {
+  color: #f3c13b !important;
+}
+.af-menu-link--active:hover {
+  color: #ffffff !important;
+}
+.af-wa-cta:hover {
+  transform: translateY(-4px);
+  background: #1fbb59;
+  color: #ffffff;
+}
+
+/* ProblemsSection: las tarjetas usan <Reveal> (componente), así que styled-jsx
+   no inyecta su clase de scope — igual que .af-pillar-card, viven aquí. */
+.af-problem-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(230, 187, 82, 0.16);
+  border-radius: 14px;
+  padding: clamp(26px, 2.6vw, 44px);
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+.af-problem-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.07);
+}
+.af-tape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #e5b93b;
+  padding: clamp(15px, 2.4vw, 20px) 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.af-tape::before,
+.af-tape::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 7px;
+  background: repeating-linear-gradient(90deg, #141414 0 16px, transparent 16px 40px);
+}
+.af-tape::before {
+  top: 5px;
+}
+.af-tape::after {
+  bottom: 5px;
+}
+.af-tape-row {
+  display: flex;
+  gap: 26px;
+  white-space: nowrap;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: clamp(11px, 1.4vw, 22px);
+  letter-spacing: 2px;
+  color: #141414;
+}

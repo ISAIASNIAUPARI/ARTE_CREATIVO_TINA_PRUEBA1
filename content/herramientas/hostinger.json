@@ -1,0 +1,9 @@
+{
+  "title": "Hostinger",
+  "category": "Herramientas",
+  "logo": "/images/tools/hostinger.webp",
+  "logoBackground": "#2b2b2b",
+  "description": "El hosting que uso para negocios locales: buen precio, respaldo diario y tiempos de carga bajos en Ecuador.",
+  "aboutText": "Sobre la herramienta: Hostinger incluye caché, CDN y certificados SSL, tres cosas que se notan directo en la velocidad del sitio.",
+  "order": 5
+}

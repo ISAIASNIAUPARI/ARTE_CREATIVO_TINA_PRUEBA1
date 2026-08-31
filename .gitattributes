@@ -1,0 +1,6 @@
+# Normaliza saltos de línea a LF (TinaCMS escribe LF; evita diffs ruidosos).
+* text=auto eol=lf
+*.png binary
+*.webp binary
+*.mp4 binary
+*.ico binary

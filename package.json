@@ -1,0 +1,25 @@
+{
+  "name": "arte-creativo-tina-prueba1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build --skip-cloud-checks --skip-indexing && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "styled-jsx": "^5.1.7",
+    "tinacms": "^3.12.1"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^2.6.1",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "typescript": "^5.7.3"
+  }
+}

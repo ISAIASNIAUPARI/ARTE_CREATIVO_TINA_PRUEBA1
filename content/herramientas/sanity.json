@@ -1,0 +1,9 @@
+{
+  "title": "Sanity",
+  "category": "Herramientas",
+  "logo": "/images/tools/sanity.webp",
+  "logoBackground": "#ffffff",
+  "description": "CMS headless para proyectos donde el contenido alimenta varias plataformas a la vez.",
+  "aboutText": "Sobre la herramienta: Sanity guarda el contenido en estructuras reutilizables y lo entrega por API, ideal para webs hechas a medida.",
+  "order": 1
+}

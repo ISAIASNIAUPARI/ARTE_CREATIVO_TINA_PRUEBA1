@@ -1,0 +1,22 @@
+{
+  "title": "Consultorio Dental Dr. Javier Solís",
+  "category": "Especializado",
+  "service": "Diseño Web para Consultorio",
+  "image": "/images/projects/dental-solis-card.webp",
+  "shortDescription": "Odontología con enfoque en confianza: agenda de citas visible desde el primer scroll.",
+  "featuredOnHome": true,
+  "order": 2,
+  "caseImage": "/images/projects/dental-solis-case.webp",
+  "objective": "Transmitir confianza inmediata a nuevos pacientes y facilitar la agenda de citas.",
+  "story": [
+    { "parrafo": "Un consultorio dental necesitaba una landing directa que transmitiera confianza desde el primer vistazo, sin distraer con exceso de secciones." },
+    { "parrafo": "El resultado es una página de una sola pantalla con mensaje claro y botón de agenda de cita siempre visible." }
+  ],
+  "benefits": [
+    { "title": "Mensaje directo", "text": "Una sola pantalla con el mensaje clave: salud bucal en manos expertas." },
+    { "title": "Agenda siempre visible", "text": "El botón de agendar cita acompaña al usuario en todo momento." },
+    { "title": "Contacto por WhatsApp", "text": "Un clic para resolver dudas antes de programar la visita." }
+  ],
+  "closingQuestion": "¿Tu consultorio necesita una primera impresión que genere confianza?",
+  "closingSubtext": "Hablemos de tu proyecto."
+}

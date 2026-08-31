@@ -1,0 +1,9 @@
+{
+  "title": "n8n",
+  "category": "Herramientas",
+  "logo": "/images/tools/n8n.webp",
+  "logoBackground": "#ffffff",
+  "description": "Automatizo tareas repetitivas: leads que llegan al CRM, avisos por WhatsApp y reportes sin intervención manual.",
+  "aboutText": "Sobre la herramienta: n8n conecta formularios, hojas de cálculo y mensajería en flujos visuales; se autohospeda y no cobra por ejecución.",
+  "order": 4
+}

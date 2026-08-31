@@ -1,0 +1,22 @@
+{
+  "title": "Cafetería de Especialidad",
+  "category": "Tiendas",
+  "service": "Tienda y Servicios Adicionales",
+  "image": "/images/projects/cafeteria-kuna-card.webp",
+  "shortDescription": "Cafetería de especialidad con tienda en línea, eventos, capacitaciones y merchandising propio.",
+  "featuredOnHome": false,
+  "order": 6,
+  "caseImage": "/images/projects/cafeteria-kuna-case.webp",
+  "objective": "Vender café en línea y además mostrar servicios de eventos, capacitación y merchandising propio.",
+  "story": [
+    { "parrafo": "Una cafetería de especialidad quería vender café en línea y además ofrecer eventos, capacitaciones y merchandising propio." },
+    { "parrafo": "Se construyó una tienda con catálogo de productos, sección de servicios adicionales y galería del local." }
+  ],
+  "benefits": [
+    { "title": "Tienda integrada", "text": "Catálogo de café, chocolate y accesorios en una sola sección." },
+    { "title": "Servicios adicionales", "text": "Eventos, capacitaciones y moda, presentados junto al catálogo principal." },
+    { "title": "Galería del local", "text": "Fotos reales del espacio para generar cercanía." }
+  ],
+  "closingQuestion": "¿Tu cafetería ofrece más que café?",
+  "closingSubtext": "Mostrémoslo todo en un solo lugar."
+}

@@ -1,0 +1,9 @@
+{
+  "title": "WhatsApp Business API",
+  "category": "Herramientas",
+  "logo": "/images/tools/whatsapp-api.webp",
+  "logoBackground": "#f3ecdc",
+  "description": "Convierto la web en un canal de ventas directo: pedidos y consultas que llegan al chat con el contexto listo.",
+  "aboutText": "Sobre la herramienta: la API permite respuestas automáticas, plantillas aprobadas y varios agentes en un mismo número.",
+  "order": 6
+}

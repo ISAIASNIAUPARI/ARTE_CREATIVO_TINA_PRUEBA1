@@ -1,0 +1,9 @@
+{
+  "title": "Meta Pixel y Ads",
+  "category": "Herramientas",
+  "logo": "/images/tools/meta.webp",
+  "logoBackground": "#ffffff",
+  "description": "Mido cada campaña antes de invertir: eventos configurados, audiencias limpias y datos que sirven para decidir.",
+  "aboutText": "Sobre la herramienta: el Pixel de Meta registra qué hacen los visitantes y alimenta las campañas de Facebook e Instagram.",
+  "order": 7
+}

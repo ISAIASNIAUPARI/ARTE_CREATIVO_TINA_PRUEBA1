@@ -1,0 +1,9 @@
+{
+  "title": "Vercel",
+  "category": "Herramientas",
+  "logo": "/images/tools/vercel.webp",
+  "logoBackground": "#000000",
+  "description": "Para proyectos a medida en Next.js: despliegues en segundos y rendimiento global.",
+  "aboutText": "Sobre la herramienta: Vercel publica cada cambio en una URL propia y sirve el sitio desde la red más cercana al visitante.",
+  "order": 2
+}

@@ -1,0 +1,9 @@
+{
+  "title": "HTML, CSS y JavaScript",
+  "category": "Herramientas",
+  "logo": "/images/tools/html-css-js.webp",
+  "logoBackground": "#ffffff",
+  "description": "Cuando un diseño no cabe en una plantilla, lo escribo a mano y mantengo el control total.",
+  "aboutText": "Sobre la herramienta: la base de la web. Dominarla es lo que permite optimizar carga, accesibilidad y animaciones sin plugins de más.",
+  "order": 3
+}

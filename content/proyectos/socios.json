@@ -1,0 +1,22 @@
+{
+  "title": "SOCIO-S",
+  "category": "Especializado",
+  "service": "Plataforma de Reservas",
+  "image": "/images/projects/socios-card.webp",
+  "shortDescription": "Espacios profesionales por horas en cuatro ciudades, con buscador, mapa y reserva por WhatsApp.",
+  "featuredOnHome": true,
+  "order": 3,
+  "caseImage": "/images/projects/socios-case.webp",
+  "objective": "Conectar profesionales independientes con espacios por hora en cuatro ciudades del Ecuador.",
+  "story": [
+    { "parrafo": "SOCIO-S conecta a profesionales independientes (barberos, fotógrafos, entrenadores) con espacios por hora en cuatro ciudades del Ecuador." },
+    { "parrafo": "Se diseñó un buscador por categoría, un mapa interactivo de espacios disponibles y reserva directa por WhatsApp, sin fricción entre buscar y agendar." }
+  ],
+  "benefits": [
+    { "title": "Buscador por categoría", "text": "Barbería, oficina, estudio o consultorio: cada espacio se filtra según lo que el usuario necesita." },
+    { "title": "Mapa interactivo", "text": "Ubicación exacta de cada espacio disponible antes de reservar." },
+    { "title": "Reserva por WhatsApp", "text": "De ver el espacio a confirmar la reserva, sin pasos de más." }
+  ],
+  "closingQuestion": "¿Tienes espacios que podrían rentarse por hora?",
+  "closingSubtext": "Diseñemos la plataforma que los conecte con quien los necesita."
+}

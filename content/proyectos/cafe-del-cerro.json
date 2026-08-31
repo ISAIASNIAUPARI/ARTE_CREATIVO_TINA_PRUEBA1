@@ -1,0 +1,22 @@
+{
+  "title": "Café del Cerro",
+  "category": "Tiendas",
+  "service": "Diseño Web y E-commerce",
+  "image": "/images/projects/cafe-del-cerro-card.webp",
+  "shortDescription": "Café tostado de Zaruma con catálogo bilingüe, fichas de producto y formulario de contacto directo.",
+  "featuredOnHome": true,
+  "order": 1,
+  "caseImage": "/images/projects/cafe-del-cerro-case.webp",
+  "objective": "Vender café tostado de Zaruma en español e inglés, sin depender de redes sociales para explicar cada producto.",
+  "story": [
+    { "parrafo": "Una marca de café de Zaruma necesitaba vender en español e inglés, con fichas claras de modo de empleo y conservación para cada tipo de tueste." },
+    { "parrafo": "Se construyó un catálogo bilingüe con secciones de origen y proceso, para que el comprador entienda el producto antes de escribir." }
+  ],
+  "benefits": [
+    { "title": "Catálogo bilingüe", "text": "Cada presentación de café tiene su ficha en español e inglés, con modo de empleo y consejos de conservación." },
+    { "title": "Ficha de producto clara", "text": "El cliente entiende de un vistazo si el tueste es claro, medio o oscuro, y cómo prepararlo." },
+    { "title": "Contacto directo", "text": "Formulario de contacto y datos de la marca visibles desde cualquier página." }
+  ],
+  "closingQuestion": "¿Vendes un producto con historia detrás?",
+  "closingSubtext": "Construyamos una tienda que la cuente."
+}

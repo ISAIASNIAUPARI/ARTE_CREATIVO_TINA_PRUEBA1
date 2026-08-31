@@ -1,0 +1,10 @@
+{
+  "heading": "Los 3 Problemas de una Página Web",
+  "subheading": "Muchos negocios pierden oportunidades por tener una web que no comunica confianza.",
+  "items": [
+    { "title": "¿No Vende?", "text": "Tu sitio debe ser un imán de clientes, no un gasto." },
+    { "title": "¿Es Lenta?", "text": "Si tarda más de 3 segundos en cargar, el cliente se va con la competencia." },
+    { "title": "¿Desactualizada?", "text": "Un diseño obsoleto aleja a los clientes de alto valor." }
+  ],
+  "tapeText": "- PELIGRO"
+}

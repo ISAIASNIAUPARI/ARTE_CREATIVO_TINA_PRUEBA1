@@ -1,0 +1,22 @@
+{
+  "title": "Deessa · Mandarin Oriental Ritz",
+  "category": "Especializado",
+  "service": "Sitio de Restaurante Gastronómico",
+  "image": "/images/projects/deessa-card.webp",
+  "shortDescription": "Restaurante gastronómico de hotel de lujo, con reserva de mesa directa y presentación del chef.",
+  "featuredOnHome": false,
+  "order": 7,
+  "caseImage": "/images/projects/deessa-case.webp",
+  "objective": "Dar a un restaurante con dos estrellas Michelin una presencia web a la altura de su servicio.",
+  "story": [
+    { "parrafo": "Un restaurante gastronómico de hotel de lujo necesitaba una presencia web a la altura de sus dos estrellas Michelin, con reservas y presentación del chef." },
+    { "parrafo": "El sitio combina fotografía del espacio, menús descargables y reserva de mesa directa." }
+  ],
+  "benefits": [
+    { "title": "Reserva directa", "text": "Botones de reserva de mesa y hotel siempre visibles." },
+    { "title": "Presentación del chef", "text": "Una sección dedicada a la trayectoria detrás de la cocina." },
+    { "title": "Fotografía cuidada", "text": "El espacio y los platos protagonizan cada sección." }
+  ],
+  "closingQuestion": "¿Tu restaurante necesita una web a la altura de su cocina?",
+  "closingSubtext": "Hablemos de tu proyecto."
+}
